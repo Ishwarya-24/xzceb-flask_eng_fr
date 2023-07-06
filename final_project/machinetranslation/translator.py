@@ -1,11 +1,12 @@
-from deep_translator import MyMemoryTranslator
+from googletrans import Translator
 
 def englishToFrench(englishText):
-    translator = MyMemoryTranslator(source='en', target='fr')
-    frenchText = translator.translate(englishText)
+    translator = Translator()
+    frenchText = translator.translate(englishText, dest='fr').text
     return frenchText
 
 def frenchToEnglish(frenchText):
-    translator = MyMemoryTranslator(source='fr', target='en')
-    englishText = translator.translate(frenchText)
+    translator = Translator()
+    englishText = translator.translate(frenchText, dest='en').text
     return englishText
+

@@ -1,9 +1,6 @@
 import unittest
 from machinetranslation.translator import englishToFrench, frenchToEnglish
 
-
-
-
 class TranslationTests(unittest.TestCase):
     def test_english_to_french_hello(self):
         english_text = 'Hello'
@@ -31,4 +28,3 @@ class TranslationTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
